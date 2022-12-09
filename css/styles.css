@@ -1,0 +1,449 @@
+/* ==============Baze================= */
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  color: #2e2f42;
+  font-size: 16px;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.list {
+  list-style: none;
+}
+
+.decor {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* ==============/Baze================= */
+
+/* ============== Components============*/
+:root {
+  --main-color-text: #434455;
+  --primary-brand: #4d5ae5;
+  --universal-color: #2e2f42;
+  --subakcent-color: #f4f4fd;
+  --color-secondary: #ffffff;
+  --color-fon: #f4f4fd;
+  --color-decor: #e7e9fc;
+}
+
+/* ============== /Components============*/
+
+/* --------логотип і навігація--------- */
+.top-page {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.cont-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cont-nav {
+  display: flex;
+}
+.logo-web {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--primary-brand);
+}
+.logo-studio {
+  margin-right: 77px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--universal-color);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.text-style {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: inherit;
+}
+.menu-list:hover,
+.menu-list:focus {
+  color: var(--main-color-text);
+}
+.menu-list:active {
+  color: var(--primary-brand);
+}
+
+.text-top {
+  display: flex;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-color-text);
+}
+
+.text-top-efects,
+.text-top-efects {
+  color: var(--main-color-text);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.text-top-efects:hover,
+.text-top-efects:focus {
+  color: var(--primary-brand);
+}
+.top-link-margin {
+  margin-left: 40px;
+}
+
+/* --------/логотип і навігація--------- */
+
+/* ------оформлення секції герой ----------*/
+.hero-style {
+  padding-top: 192px;
+  padding-bottom: 192px;
+  background-color: var(--universal-color);
+  text-align: center;
+}
+.hero-case {
+}
+.hero-title {
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 56px;
+  width: 496px;
+  line-height: 1.07;
+  color: var(--color-secondary);
+}
+
+.buttons-style {
+  min-width: 170px;
+  margin-top: 48px;
+  padding-top: 16px;
+  padding-right: 10px;
+  padding-bottom: 16px;
+  padding-left: 10px;
+  background: var(--primary-brand);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px transparent;
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: var(--color-secondary);
+  cursor: pointer;
+}
+.buttons-style:hover,
+.buttons-style:focus {
+  background: var(--primary-brand);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.buttons-style:active {
+  background: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  /* ------/оформлення секції герой ----------*/
+}
+/*  -------секція друга - основні переваги-------------*/
+
+.elements-place {
+  display: flex;
+  justify-content: space-between;
+}
+
+.place-of-space:not(:last-child) {
+  margin-right: 24px;
+  flex-basis: calc((100% - 72px) / 4);
+  min-width: 264px;
+}
+.element-of-dicoration {
+  display: inline-block;
+  width: 264px;
+  height: 112px;
+  padding: 24px 100px;
+  margin-bottom: 8px;
+  background: #f4f4fd;
+  border-radius: 4px;
+}
+
+.subhead {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.main-content {
+  letter-spacing: 0.02em;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-color-text);
+}
+
+/*  --------/секція друга - основні переваги-------------*/
+
+/* для картинок задавати display: block, max-width: 100%, height: auto */
+/* ----------cекція третя - що ми робимо-------------- */
+.box-space {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+.subtitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.work-list {
+  display: flex;
+  gap: 24px;
+}
+.work-list-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+/* --------/cекція третя - що ми робимо-------------- */
+
+/*--------секція четверта - наша команда-----------*/
+.space {
+  padding-bottom: 120px;
+}
+.image-descriptions {
+  padding-top: 32px;
+  text-align: center;
+}
+.sub-subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.back-ceil {
+  background-color: var(--color-fon);
+}
+
+.data-team {
+  display: flex;
+  gap: 24px;
+}
+.back-pictures-phone {
+  flex-basis: calc((100% - 72px) / 4);
+  background-color: var(--color-secondary);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.text-describ {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-color-text);
+}
+.box-social-link {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding-bottom: 32px;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--primary-brand);
+}
+.social-link-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.link-marker {
+  width: 16px;
+  height: 16px;
+  fill: var(--color-fon);
+}
+
+/*--------/секція четверта - наша команда-----------*/
+/* ------додаткова секція з іконками посиланнями на компанії-------- */
+
+
+/* ------/додаткова секція з іконками посиланнями на компанії-------- */
+/* -----------футер-------------- */
+
+.color-back-space {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--universal-color);
+}
+
+.second-logo-color {
+  margin-right: 0;
+  padding-top: 0;
+  color: var(--color-fon);
+}
+.main-footer {
+}
+.main-footer-text {
+  margin-top: 16px;
+  margin-right: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #e7e9fc;
+}
+
+.main-footer-text {
+  width: 264px;
+}
+/* -----------/футер-------------- */
+
+/* ==================Portfolio======================= */
+
+/* -----------оформлення кнопок----------- */
+.main-box {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.portfolio-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+.menu-items:not(:last-child) {
+  margin-right: 24px;
+}
+
+.filter-button {
+  background-color: var(--color-fon);
+  padding: 8px 16px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-brand);
+
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--primary-brand);
+  color: var(--color-secondary);
+  border-color: transparent;
+}
+/* -----------/оформлення кнопок----------- */
+
+/* ----------оформлення тексту до карток-------------*/
+.main-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.card-text {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border-left: 0.5px solid #f4f4fd;
+  border-bottom: 0.5px solid #f4f4fd;
+  border-right: 0.5px solid #f4f4fd;
+}
+.text-image {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--universal-color);
+}
+
+.subtext-image {
+  margin-top: 8px;
+  color: var(--main-color-text);
+}
+
+/* ----------/оформлення тексту до карток-------------*/
+
+/* ==================/Portfolio======================= */
